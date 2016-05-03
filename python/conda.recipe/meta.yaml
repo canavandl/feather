@@ -1,0 +1,24 @@
+package:
+  name: feather-format
+  version: "0.2.0"
+
+source:
+  fn: feather-0.2.0.tar.gz
+  url: https://github.com/wesm/feather/archive/v0.2.0.tar.gz
+  md5: 7aeb7ce9a4df6315452cfd54699a1a03
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython >=0.21.0
+    - pandas >=0.17.0
+    - gcc
+  run:
+    - python
+    - pandas
+
+about:
+  home: https://github.com/wesm/feather
+  license: Apache 2.0
+  summary: "Feather: fast, interoperable binary data frame storage for Python, R, and more powered by Apache Arrow"
